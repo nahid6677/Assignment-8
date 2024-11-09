@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "P001",
+        "product_title": "Apple iPhone 15 Pro Max",
+        "product_image": "https://media.gettyimages.com/id/1738958762/photo/apple-iphone-15-pro-max-smart-phone.jpg?s=2048x2048&w=gi&k=20&c=L9VYg5cNHelH9LYRuwqXhK9JA4_D95-36tYTM2i2Lp8=",
+        "category": "Smartphones",
+        "price": 1299,
+        "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+        "specification": [
+            "6.7-inch Super Retina XDR display",
+            "A17 Bionic chip",
+            "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+            "LiDAR Scanner",
+            "Up to 2TB storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P002",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://media.gettyimages.com/id/1259143667/photo/skorea-economy-samsung.jpg?s=2048x2048&w=gi&k=20&c=jYZCbh_bdijdzQXrmVltnl9-CSpHQNcmb8cNGu3_-R4=",
+        "category": "Smartphones",
+        "price": 1199,
+        "description": "Samsung's latest flagship with powerful features and cutting-edge design.",
+        "specification": [
+            "6.8-inch Dynamic AMOLED 2X",
+            "Snapdragon 8 Gen 2 processor",
+            "200MP quad-camera setup",
+            "5,000mAh battery",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "P003",
+        "product_title": "Google Pixel 8 Pro",
+        "product_image": "https://media.gettyimages.com/id/1705744718/photo/us-tech-telecommunication-google.jpg?s=2048x2048&w=gi&k=20&c=fX6GhmabTYJOhx1pm2W2jdueHyLFcYl5Gm-teAkkT_8=",
+        "category": "Smartphones",
+        "price": 999,
+        "description": "Google's AI-powered Pixel with advanced photography features.",
+        "specification": [
+            "6.7-inch LTPO OLED display",
+            "Google Tensor G3 processor",
+            "50MP triple-camera system",
+            "Titan M2 security chip",
+            "Up to 512GB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "P004",
+        "product_title": "Apple MacBook Pro 14-inch",
+        "product_image": "https://media.gettyimages.com/id/1233321539/photo/apple-hosts-all-virtual-worldwide-developers-conference.jpg?s=2048x2048&w=gi&k=20&c=KdnZI8J_89Lav8N_OTX0WG7axdLRNU9HsSLof70OKWc=",
+        "category": "Laptops",
+        "price": 1999,
+        "description": "A powerful laptop designed for professionals with the M2 Pro chip.",
+        "specification": [
+            "14.2-inch Liquid Retina XDR display",
+            "Apple M2 Pro chip",
+            "16GB unified memory",
+            "1TB SSD storage",
+            "Up to 18 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "P005",
+        "product_title": "Dell XPS 13 Plus",
+        "product_image": "https://media.gettyimages.com/id/1237093710/photo/dell-xps-13-2-in-1-laptop.jpg?s=2048x2048&w=gi&k=20&c=66aEk6TBiRQuHszSTNwfKXv-CVWf6WWEpvms3NmlcHE=",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "The Dell XPS 13 Plus, a sleek and powerful ultrabook for all your needs.",
+        "specification": [
+            "13.4-inch FHD+ InfinityEdge display",
+            "12th Gen Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "Intel Iris Xe graphics"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "P006",
+        "product_title": "Microsoft Surface Laptop 5",
+        "product_image": "https://media.gettyimages.com/id/1139417620/photo/premium-two-in-one-laptop-computers.jpg?s=2048x2048&w=gi&k=20&c=1glWkQLoVg4zBFmdNBDuLQY5xo1NqVrz0jVRemufURU=",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "Sleek design and performance with the Surface Laptop 5.",
+        "specification": [
+            "13.5-inch PixelSense display",
+            "Intel Evo platform",
+            "8GB RAM",
+            "256GB SSD",
+            "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "P007",
+        "product_title": "Apple iPad Pro 12.9",
+        "product_image": "https://media.gettyimages.com/id/487393564/photo/apple-inc-to-unveil-iphone-6s-and-apple-tv.jpg?s=2048x2048&w=gi&k=20&c=HQGfs0Ef4zh24Y4vdvioYsV9Qjg_nGvujAoN3KfQq-s=",
+        "category": "Tablets",
+        "price": 1099,
+        "description": "The ultimate iPad with M2 chip for professionals and creators.",
+        "specification": [
+            "12.9-inch Liquid Retina XDR display",
+            "Apple M2 chip",
+            "Up to 2TB storage",
+            "5G support",
+            "12MP wide and 10MP ultra-wide cameras"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "P008",
+        "product_title": "Samsung Galaxy Tab S9 Ultra",
+        "product_image": "https://media.gettyimages.com/id/1556339652/photo/samsung-unveils-thinner-foldable-phones-and-new-watches-tablets.jpg?s=2048x2048&w=gi&k=20&c=Wy5W071Ug9GIjhbcioAPJu98AYofKy3nL_9RTn5IoZ8=",
+        "category": "Tablets",
+        "price": 1199,
+        "description": "Samsung's flagship tablet with a stunning display and powerful features.",
+        "specification": [
+            "14.6-inch Super AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "12GB RAM",
+            "Up to 1TB storage",
+            "Dual rear cameras"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "P009",
+        "product_title": "Apple Watch Series 9",
+        "product_image": "https://media.gettyimages.com/id/1865310951/photo/apple-prepares-to-temporarily-stop-selling-its-watch-in-the-u-s-over-federal-trade-ruling.jpg?s=2048x2048&w=gi&k=20&c=OAk4dBOdQpe-4xTNf0dwZJA4KuPMYcoucO11T3wKkXQ=",
+        "category": "Smartwatches",
+        "price": 499,
+        "description": "Advanced health tracking with Apple Watch Series 9.",
+        "specification": [
+            "45mm Retina LTPO OLED display",
+            "Apple S9 chip",
+            "Blood Oxygen and ECG sensors",
+            "Water-resistant up to 50 meters",
+            "Up to 36 hours battery life"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P010",
+        "product_title": "Samsung Galaxy Watch 6 Classic",
+        "product_image": "https://media.gettyimages.com/id/1636795775/photo/global-tech-at-2023-ifa-consumer-electronics-fair.jpg?s=2048x2048&w=gi&k=20&c=w8P3tAbz8Z2N6yNr3wNvea9KbQjQo9j2BhUOIsRHHNY=",
+        "category": "Smartwatches",
+        "price": 399,
+        "description": "Elegant design and advanced tracking with Galaxy Watch 6.",
+        "specification": [
+            "47mm Super AMOLED display",
+            "BioActive sensor for health tracking",
+            "1.5GB RAM, 16GB storage",
+            "Water and dust resistant",
+            "Up to 40 hours battery life"
+        ],
+        "availability": true,
+        "rating": 4.6
+    }
+]
