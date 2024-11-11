@@ -117,7 +117,7 @@ const Home = () => {
                     </div>
                     <div className={`w-full ${products.length ? 'grid' : 'flex items-center'} gap-2 xl:gap-8 p-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
                         {
-                            products.length ? products.map(data => <Card key={data.product_id} data={data}></Card>) : <div className='w-full'> <h2 className='text-xl sm:text-3xl md:text-7xl text-black text-center font-bold'>Products Not Found!!!</h2></div>
+                            products.length ? products?.map(data => <Card key={data.product_id} data={data}></Card>) : <div className='w-full'> <h2 className='text-xl sm:text-3xl md:text-7xl text-black text-center font-bold'>Products Not Found!!!</h2></div>
                         }
                     </div>
 

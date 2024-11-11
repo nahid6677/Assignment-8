@@ -17,7 +17,7 @@ const DashBoard = () => {
 
     const handleCartData = (id) => {
         setCartData(cardData.filter(pro => pro.product_id !== id));
-        const x = cardData.map(pro => pro.product_id)
+        const x = cardData?.map(pro => pro.product_id)
         const arrStr = JSON.stringify(x.filter(pro => pro !== id))
         // console.log(arrStr)
         localStorage.setItem('cart', arrStr)
@@ -25,7 +25,7 @@ const DashBoard = () => {
     }
     const handlefavouriteData = (id) => {
         usefavourite(favourite.filter(pro => pro.product_id !== id));
-        const x = favourite.map(pro => pro.product_id);
+        const x = favourite?.map(pro => pro.product_id);
         const arrStr = JSON.stringify(x.filter(pro => pro !== id))
         localStorage.setItem('favourite', arrStr)
         // console.log('kkk')
@@ -38,21 +38,12 @@ const DashBoard = () => {
 
     }
     const handleSortPrice = () => {
-        const sort = cardData.map(pr => pr.price).sort((a, b) => a - b);
-        let vv = []
-        for (const item of cardData) {
-            for (const itm of sort) {
-                if (item.price === itm) {
-
-                    vv.push(item)
-                }
-            }
-        }
-        setCartData(vv.reverse())
+        const aaaaa = cardData.map(product => product).sort((a, b) => b.price - a.price)
+        setCartData(aaaaa)
     }
     const handlePurchase = () => {
         localStorage.setItem('cart', [])
-        setuse(cardData.map(pro => pro.price).reduce((a, b) => a + b, 0))
+        setuse(cardData?.map(pro => pro.price).reduce((a, b) => a + b, 0))
         setCartData([])
         // console.log('gggggggg')
     }
@@ -93,7 +84,7 @@ const DashBoard = () => {
                             <div className="w-full py-4 flex justify-between items-center border-b-2 mb-5">
                                 <h3 className='text-black font-bold text-2xl '>Cart</h3>
                                 <div className="flex gap-2 items-center">
-                                    <h4 className='text-black font-bold'>Total cost: {cardData.map(pro => pro.price).reduce((a, b) => a + b, 0)}</h4>
+                                    <h4 className='text-black font-bold'>Total cost: {cardData?.map(pro => pro.price).reduce((a, b) => a + b, 0)}</h4>
                                     <button onClick={handleSortPrice} className='btn bg-white border-none hover:bg-white'><span className='flex gap-2 items-center'><h2 className='text-xl text-purple-500'>Sort by Price</h2> <img src={'https://i.ibb.co.com/jLzXNfZ/Frame-2.png'} alt="" /></span></button>
                                     {/* <button onClick={handlePurchase} className='btn bg-purple-500 border-none hover:bg-white text-white font-bold hover:text-black'>Purchase</button> */}
                                     <label onClick={handlePurchase} htmlFor="my_modal_6" className={`bg-blue-500 text-white font-bold py-2 px-4 rounded ${cardData.length === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
@@ -101,14 +92,14 @@ const DashBoard = () => {
                                 </div>
                             </div>
                             {
-                                cardData.map((product, x) => <CartProduct key={x} product={product} handleCartData={handleCartData}></CartProduct>)
+                                cardData?.map((product, x) => <CartProduct key={x} product={product} handleCartData={handleCartData}></CartProduct>)
                             }
                         </div>
 
                     </TabPanel>
                     <TabPanel className={'w-full flex justify-center mt-10'}>
                         <div className="mx-auto w-2/3 ">
-                            {favourite.map((product, x) => <FavouriteProduct key={`${x}54`} product={product} handlefavouriteData={handlefavouriteData} handlefavouriteD={handlefavouriteD}></FavouriteProduct>)}
+                            {favourite?.map((product, x) => <FavouriteProduct key={`${x}54`} product={product} handlefavouriteData={handlefavouriteData} handlefavouriteD={handlefavouriteD}></FavouriteProduct>)}
                         </div>
                     </TabPanel>
                 </Tabs>

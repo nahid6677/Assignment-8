@@ -25,7 +25,7 @@ const Details = () => {
                     {/* <img className='rounded-lg w-full h-auto' src={'https://i.ibb.co.com/pLLP95q/banner.jpg'} alt="" /> */}
 
                     {
-                        allData.map(data => data.product_id === product_id && <SeeDetail data={data}></SeeDetail>)
+                        allData?.map(data => data.product_id === product_id && <SeeDetail data={data}></SeeDetail>)
                     }
                 </div>
             </div>

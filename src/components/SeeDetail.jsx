@@ -25,7 +25,7 @@ const SeeDetail = ({ data }) => {
                 <p className='font-bold text-black'>Specification:</p>
                 <div className="">
                     {
-                        specification.map(item => <p className='text-black'>{item}</p>)
+                        specification?.map(item => <p className='text-black'>{item}</p>)
                     }
                 </div>
                 <p className='font-bold text-black'>Ratting: </p>
