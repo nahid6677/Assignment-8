@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FavouriteProduct = ({ product, handlefavouriteData,handlefavouriteD }) => {
+const FavouriteProduct = ({ product, handlefavouriteData, handlefavouriteD }) => {
     const { product_id, product_title, product_image, category, price, description, specification, availability, rating } = product;
     return (
         <div className="w-full bg-white grid grid-cols-4 gap-2 my-2 border rounded-lg">

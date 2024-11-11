@@ -19,7 +19,7 @@ const addCartToLocalSorage = (id) => {
     else {
         storeList.push(id);
         const storedListStr = JSON.stringify(storeList);
-        localStorage.setItem('cart',storedListStr);
+        localStorage.setItem('cart', storedListStr);
 
         toast('Product add in your cart')
     }
@@ -43,7 +43,7 @@ const addfabriteToLocalSorage = (id) => {
     else {
         storeList.push(id);
         const storedListStr = JSON.stringify(storeList);
-        localStorage.setItem('favourite',storedListStr);
+        localStorage.setItem('favourite', storedListStr);
 
         toast('Product add in your favourite list')
     }
@@ -52,4 +52,4 @@ const addfabriteToLocalSorage = (id) => {
 
 
 
-export {addCartToLocalSorage,getCartFromLocalStore,addfabriteToLocalSorage,getfavouriteFromLocalStore}
+export { addCartToLocalSorage, getCartFromLocalStore, addfabriteToLocalSorage, getfavouriteFromLocalStore }

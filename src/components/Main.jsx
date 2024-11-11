@@ -9,7 +9,7 @@ const Main = () => {
 
                 </div>
                 <div className="col-span-4">
-                    
+
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ const Home = () => {
     const loadData = useLoaderData();
     const [products, setProducts] = useState(loadData)
 
-    const handleIphoneall =(loadData) =>{
+    const handleIphoneall = (loadData) => {
         setProducts(loadData)
 
         document.getElementById('all').classList.add('text-green-500')

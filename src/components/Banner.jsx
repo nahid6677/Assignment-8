@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="flex w-full justify-center">
                 <button className='bg-white mt-5 rounded-lg py-2 px-4 font-bold text-purple-500 text-xl mx-auto btn border-none'>Shop Now</button>
             </div>
-            
+
         </div>
     );
 };

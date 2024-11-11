@@ -13,9 +13,9 @@ const Details = () => {
     return (
         <div className="bg-gray-50 ">
             <div className=" p-1 mb-[420px] md:mb-72 lg:mb-48 xl:mb-72 xxl:mb-96 w-11/12 rounded-2xl mx-auto">
-            <NavBar bg={''} text={'text-black'} color={'text-green-500'}></NavBar>
+                <NavBar bg={''} text={'text-black'} color={'text-green-500'}></NavBar>
                 <div className='w-full px-5 py-5 rounded-2xl bg-purple-500'>
-                    
+
                     <div className="w-11/12 mx-auto mb-64 mt-3">
                         <h1 className='text-white text-center text-3xl font-bold'> Product Details</h1>
                         <p className='w-full text-center mx-auto text-white text md:w-8/12'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

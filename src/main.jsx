@@ -9,7 +9,7 @@ import Home from './components/Home';
 import Details from './components/Details';
 import DashBoard from './components/DashBoard';
 import Statistics from './components/Statistics';
-import Root from './components/Root'; 
+import Root from './components/Root';
 import ErrorPase from './ErrorPase';
 import { ToastContainer } from 'react-toastify';
 
@@ -18,7 +18,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />, 
+    element: <Root />,
     errorElement: <ErrorPase />,
     children: [
       {

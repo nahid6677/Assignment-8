@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom";
-const NavBar = ({bg, text, color = ''}) => {
+const NavBar = ({ bg, text, color = '' }) => {
 
     const link = <>
         <li className={`md:mr-1 font-bold ${color}`}><NavLink to="/">Home</NavLink></li>
@@ -20,7 +20,7 @@ const NavBar = ({bg, text, color = ''}) => {
                             viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path
-                                strokeLinecap="round" 
+                                strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />

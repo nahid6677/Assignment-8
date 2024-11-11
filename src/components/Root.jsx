@@ -19,7 +19,7 @@ const Root = () => {
             customTitle = 'Gadget Heaven';
         }
 
-        document.title =  ` ${customTitle} | Gadget Heaven`;
+        document.title = ` ${customTitle} | Gadget Heaven`;
     }, [location.pathname]);
 
     return (
