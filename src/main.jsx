@@ -1,25 +1,44 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Home from './components/Home';
-import Main from './components/Main';
-import Root from './components/Root';
+import Details from './components/Details';
+import DashBoard from './components/DashBoard';
+import Statistics from './components/Statistics';
+import Root from './components/Root'; 
+import ErrorPase from './ErrorPase';
+import { ToastContainer } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
-    errorElement: <h2>Erro Pase</h2>,
+    element: <Root />, 
+    errorElement: <ErrorPase />,
     children: [
       {
         path: "/",
         loader: () => fetch('../public/Gadgets.json'),
-        element: <Home></Home>
+        element: <Home />
+      },
+      {
+        path: '/details/:product_id',
+        loader: () => fetch('../public/Gadgets.json'),
+        element: <Details />
+      },
+      {
+        path: "/dashboard",
+        loader: () => fetch('../public/Gadgets.json'),
+        element: <DashBoard />
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />
       }
     ]
   },
@@ -28,5 +47,32 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+    <ToastContainer />
+  </StrictMode>
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

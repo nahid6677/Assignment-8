@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({ data }) => {
     const { product_id, product_title, product_image, category, price, description, specification, availability, rating } = data;
@@ -14,7 +15,7 @@ const Card = ({ data }) => {
                 <h2 className="card-title text-black font-bold">{product_title}</h2>
                 <p className='text-black text-lg font-bold '>Price: {price}</p>
                 <div className="card-actions">
-                    <button className="btn rounded-3xl bg-gray-50 text-purple-500 border-b-red-400 border border-purple-600">View Details</button>
+                    <Link to={`/details/${product_id}`}><button className="btn rounded-3xl bg-gray-50 text-purple-500 border-b-red-400 border border-purple-600">View Details</button></Link>
                 </div>
             </div>
         </div>
