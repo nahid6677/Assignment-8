@@ -5,6 +5,7 @@ import Main from './Main';
 import Footer from './Footer';
 import { NavLink, useLoaderData } from 'react-router-dom';
 import Card from './Card';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
 
@@ -92,6 +93,9 @@ const Home = () => {
 
     return (
         <div className="bg-gray-50 pt-5 ">
+            <Helmet>
+                <title>Gadget Heaven | Home</title>
+            </Helmet>
             <div className=" p-1 md:mb-72 lg:mb-48 xl:mb-72 xxl:mb-96 w-11/12 rounded-2xl mx-auto">
                 <div className='w-full px-5 py-5 rounded-2xl bg-purple-500'>
                     <NavBar text={'text-white'}></NavBar>

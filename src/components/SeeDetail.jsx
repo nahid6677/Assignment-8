@@ -2,6 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import { addCartToLocalSorage, addfabriteToLocalSorage } from '../utility/LocalStorse.js'
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 
 const SeeDetail = ({ data }) => {
     const handleCart = (id) => {
@@ -13,6 +14,11 @@ const SeeDetail = ({ data }) => {
     const { product_id, product_title, product_image, category, price, description, specification, availability, rating } = data;
     return (
         <div className='w-full h-full md:grid bg-white grid-cols-3 py-5 rounded-lg'>
+           <Helmet>
+                <title>
+                Gadget Heaven | See Details {product_id}
+                </title>
+           </Helmet>
             <div className="col-span-1 flex items-center p-2 justify-center"><img
                 src={product_image}
                 alt={product_title}

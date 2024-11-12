@@ -7,6 +7,7 @@ import { useLoaderData } from 'react-router-dom';
 import { addCartToLocalSorage, getCartFromLocalStore, getfavouriteFromLocalStore } from '../utility/LocalStorse';
 import CartProduct from './CartProduct';
 import FavouriteProduct from './FavouriteProduct';
+import { Helmet } from 'react-helmet-async';
 const DashBoard = () => {
 
     const [favourite, usefavourite] = useState([])
@@ -58,7 +59,9 @@ const DashBoard = () => {
 
     return (
         <div className="bg-gray-50 ">
-
+            <Helmet>
+            <title>Gadget Heaven | Dashboard</title>
+            </Helmet>
             <div className=" p-1 w-full ">
                 <NavBar bg={'bg-gray-50'} text={'text-black'} color={'text-purple-500'}></NavBar>
                 <div className='w-full px-5 py-5  bg-purple-500'>

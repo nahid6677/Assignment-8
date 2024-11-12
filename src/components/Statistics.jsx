@@ -1,10 +1,14 @@
 import React from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Statistics = () => {
     return (
         <div className='bg-gray-50'>
+            <Helmet>
+                <title>Gadget Heaven | Statistits</title>
+            </Helmet>
             <div className=" p-1 w-full">
                 <NavBar bg={'bg-gray-50'} text={'text-black'} color={'text-purple-500'}></NavBar>
                 <div className='w-full px-5 py-5  bg-purple-500'>
